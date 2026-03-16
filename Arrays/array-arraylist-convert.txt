@@ -19,7 +19,7 @@ ArrL.add(50);
 
 int []arr= new int[Arrl.size()];
 for (int i=0;i< ArrL.size();i++){
-    arr[i]=ArrL.get[i];
+    arr[i]=ArrL.get(i);
 }
 
 //printing primitive arrays
@@ -71,3 +71,8 @@ if (a%2==0 && b%2!=0)return -1;
 if (a%2!=0 && b%2==0)return 1;
 return a-b;
 });
+
+
+// array copy
+        System.arraycopy(nums, 0, ans, 0, nums.length);
+        System.arraycopy(nums, 0, ans, nums.length, ans.length - nums.length);
