@@ -1,0 +1,73 @@
+FOR int/primitives
+
+
+//array to ArrayList 
+
+int[] arr = {1,2,5,4,3,6,9,8,7};
+ArrayList<Integer> ArrL= new ArrayList<>();
+for(int i:arr){
+    ArrL.add(i);
+}
+
+// ArrayList to array
+
+ArrayList<Integer> ArrL= new ArrayList<>();
+ArrL.add(10);
+ArrL.add(20);
+ArrL.add(30);
+ArrL.add(50);
+
+int []arr= new int[Arrl.size()];
+for (int i=0;i< ArrL.size();i++){
+    arr[i]=ArrL.get[i];
+}
+
+//printing primitive arrays
+System.out.println(Arrays.toString(arr));
+
+
+//non primitive arrays(strings mainly)
+
+//array-ArrayList
+ArrayList<String> list = new ArrayList<>(Arrays.asList(arr));
+
+//ArrayList to Array
+String[] arr = list.toArray(new String[0]);     //same as above
+String[] arr = list.toArray(new String[list.size()]);
+
+
+//ArrayList basic fxns
+add()
+remove()
+get()
+set()
+size()
+contains()
+clear()
+addAll()
+
+
+//Collections class
+Collections.min(list);
+Collections.max(list);
+Collections.freq(list,element);
+
+
+
+
+//Arrays class
+Arrays.sort(); //quick sort o log(n)
+Arrays.binarySearch();
+Arrays.fill(arr,value);
+
+
+//sorting Collections
+Collections.Sort(list);      //ascending
+Collections.Sort(list,Comparator.reverseOrder());   //descending
+
+//custom Comparator //here first even then odd that too sorted in ascending
+Collections.Sort(list,(a//-ve,b//+ve)->{
+if (a%2==0 && b%2!=0)return -1;
+if (a%2!=0 && b%2==0)return 1;
+return a-b;
+});
