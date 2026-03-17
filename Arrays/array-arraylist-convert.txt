@@ -76,3 +76,49 @@ return a-b;
 // array copy
         System.arraycopy(nums, 0, ans, 0, nums.length);
         System.arraycopy(nums, 0, ans, nums.length, ans.length - nums.length);
+
+
+
+
+        String myStr = "Hello, World!";
+        char[] myArray = myStr.toCharArray();
+
+        // Print the array (using Arrays.toString() for a readable format)
+        System.out.println("Char Array: " + java.util.Arrays.toString(myArray));
+
+        // Access individual characters
+        System.out.println("First character: " + myArray[0]);
+    }
+}
+
+
+accessing string chars(.charAt(index))
+
+
+/******************************************
+int p = 25;
+
+// Primitive → Object
+Integer obj1 = Integer.valueOf(p);     // best way
+Integer obj2 = new Integer(p);         // works but not recommended
+
+// Object → Primitive
+int back = obj1.intValue();
+
+/*********************************************
+
+// All conversions in one line
+int a = 10;
+Integer b = Integer.valueOf(a);     // primitive → wrapper
+int c = b.intValue();               // wrapper → primitive
+
+double d = 3.14;
+Double e = d;                       // autoboxing
+double f = e;                       // unboxing
+
+// String ↔ Integer (very common in problems)
+String s = "123";
+int num = Integer.parseInt(s);      // String → primitive
+String str = Integer.toString(num); // primitive → String
+
+int[] arr = new int[1000000];           // faster than ArrayList<Integer>
