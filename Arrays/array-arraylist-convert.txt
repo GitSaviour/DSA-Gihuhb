@@ -122,3 +122,9 @@ int num = Integer.parseInt(s);      // String → primitive
 String str = Integer.toString(num); // primitive → String
 
 int[] arr = new int[1000000];           // faster than ArrayList<Integer>
+
+
+
+max of array;
+java.util.OptionalInt=java.util.Arrays.stram(arr).max();
+int Maximum=max.getAsInt();
